@@ -45,22 +45,27 @@ main {
   text-align: center;
 
   & > #qr-code {
-    background: url(assets/images/image-qr-code.png) no-repeat;
+    width: auto;
+    height: 18rem;
+    background: url(assets/images/image-qr-code.png)center / contain no-repeat;
+    border-radius: .625rem;
+
+    margin-bottom: 1.5rem;
+  }
+
+  & > h1 {
+    font: var(--text-title);
+    color: var(--slate-900);
+
+    margin-bottom: 1rem;
+  }
+
+  & > p {
+    color: var(--slate-500);
+    font: var(--text-paragraph);
+    letter-spacing: .2px;
   }
 }
-
-h1 {
-  font: var(--text-title);
-  color: var(--slate-900);
-}
-
-p {
-  color: var(--slate-500);
-  font: var(--text-paragraph);
-  letter-spacing: .2px;
-}
-
-
 
 #footer {
   margin-top: 5rem;
